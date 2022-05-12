@@ -1,0 +1,55 @@
+/*
+  Localizable.strings
+  Nim
+
+  Created by Heiko Etzold
+  MIT License
+
+*/
+
+
+// ViewController
+fields = "cases";
+oneTile = "1 plaque";
+twoTiles = "1 ou 2 plaques";
+threeTiles = "1, 2 ou 3 plaques";
+fourTiles = "1, 2, 3 ou 4 plaques";
+lastWins = "dernière case gagne";
+lastLoses = "dernière case perd";
+
+
+// GameViewController
+left = "Gauche";
+right = "A droite";
+beginner = "Qui commençe?";
+placeTilesInOrder = "Il faut mettre les plaques de gauche à droite.";
+placeAtLeastOne = "Il faut mettre au moins une plaque.";
+turnName = "C'est à %@.";
+ready = "fini";
+selectPlayer = "Il faut choisir qui commençe.";
+winner = "%@ a gagné.";
+
+
+//ArchiveViewController
+deleteAlert = "Effacer tous jeux?";
+deleteAlertText = "Est-ce que tu veux vraiment effacer tous jeux?";
+deleteAlertSingle = "Effacer jeu?";
+deleteAlertTextSingle = "Est-ce que tu veux vraiment effacer jeux %d?";
+deleteAlertTextSingleBefore = "Est-ce que tu veux vraiment effacer jeux ";
+deleteAlertTextSingleBehind = "?";
+delete = "Effacer";
+cancel = "Annuler";
+
+NimArchive = "Archives de Nim";
+
+
+//Global
+archiveNewAlert = "Ouvrir nouvelles archives?";
+archiveNewText = "Qu'est-ce que tu veux faire?";
+archiveRemove = "Ecraser vieilles archives";
+archiveAdd = "Elargir vieilles archives";
+
+error = "Error";
+errorNotRead = "Le fichier ne peut pas être lu.";
+errorUnknown = "Une erreur inconnue s'est produite.";
+errorFileType = "Le type de fichier n'est pas pris en charge par l'application.";

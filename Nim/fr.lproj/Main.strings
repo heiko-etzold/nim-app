@@ -1,0 +1,46 @@
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "e5X-0v-4E4"; */
+"e5X-0v-4E4.title" = "Paramètres";
+
+/* Class = "UINavigationItem"; title = "Nim Game"; ObjectID = "BuW-F8-TyD"; */
+"BuW-F8-TyD.title" = "Jeu de Nim";
+
+/* Class = "UINavigationItem"; title = "Archive"; ObjectID = "vkt-RJ-T0d"; */
+"vkt-RJ-T0d.title" = "Archives";
+
+/* Class = "UINavigationItem"; title = "Explore Nim Game"; ObjectID = "axv-iq-DZL"; */
+"axv-iq-DZL.title" = "Rejouer jeu de Nim";
+
+
+
+/* Class = "UIBarButtonItem"; title = "Start"; ObjectID = "cLV-Up-Jvh"; */
+"cLV-Up-Jvh.title" = "Début";
+"0hd-WV-14P.normalTitle" = "Début";
+
+/* Class = "UITextField"; placeholder = "add name here"; ObjectID = "Lve-u8-C2w"; */
+"Lve-u8-C2w.placeholder" = "Entre nom ici.";
+
+/* Class = "UITextField"; placeholder = "add name here"; ObjectID = "bXK-KR-Ive"; */
+"bXK-KR-Ive.placeholder" = "Entre nom ici.";
+
+
+
+/* Class = "UIButton"; configuration.title = "explore game"; ObjectID = "nJc-i6-I7O"; */
+"nJc-i6-I7O.normalTitle" = "Rejouer jeu";
+
+/* Class = "UIButton"; configuration.title = "delete game"; ObjectID = "TJg-74-Zi5"; */
+"TJg-74-Zi5.normalTitle" = "Effacer jeu";
+
+
+
+/* Class = "UIButton"; configuration.title = "new game"; ObjectID = "ZUo-zC-Bh5"; */
+"ZUo-zC-Bh5.normalTitle" = "Nouveau jeu";
+
+/* Class = "UIButton"; configuration.title = "new game"; ObjectID = "u3K-WS-qT8"; */
+"u3K-WS-qT8.normalTitle" = "Nouveau jeu";
+
+/* Class = "UIButton"; configuration.title = "archive game"; ObjectID = "9be-ek-iOF"; */
+"9be-ek-iOF.normalTitle" = "Archiver jeu";
+
+/* Class = "UIButton"; configuration.title = "archive game"; ObjectID = "xQ6-EH-aOV"; */
+"xQ6-EH-aOV.normalTitle" = "Archiver jeu";

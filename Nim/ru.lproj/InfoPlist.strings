@@ -1,0 +1,14 @@
+/*
+  InfoPlist.strings
+  Nim
+
+  Created by Heiko Etzold
+  MIT License
+
+*/
+
+"CFBundleDisplayName" = "Ним";
+"CFBundleName" = "Ним";
+
+"Nim" = "Ним";
+"Nim Archive" = "Архив Ним";

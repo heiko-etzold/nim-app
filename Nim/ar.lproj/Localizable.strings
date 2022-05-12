@@ -1,0 +1,56 @@
+/*
+  Localizable.strings
+  Nim
+
+  Created by Heiko Etzold
+  MIT License
+
+*/
+
+
+// ViewController
+fields = "مربعات";
+oneTile = "قرص واحد";
+twoTiles = "قرص واحد أو قرصين";
+threeTiles = "1 أو 2 أو 3 اقراص";
+fourTiles = "1 أو 2 أو 3 أو 4 اقراص";
+lastWins = "المربع الأخير يفوز";
+lastLoses = "المربع الأخير يخسر";
+
+
+// GameViewController
+left = "يسار";
+right = "يمين";
+beginner = "من يبدأ؟";
+placeTilesInOrder = "عليك أن تضع الأقراص بالترتيب من اليمين إلى اليسار.";
+placeAtLeastOne = "يجب عليك وضع قرص واحد على الأقل.";
+turnName = "حان دور %@.";
+ready = "أنهي دورك.";
+selectPlayer = "عليك أن تختار من يبدأ أولا.";
+winner = "فازت/ فاز %@."; //ZWEI WÖRTER, DA ZWISCHEN MÄNNLICH UND WEIBLICH UNTERSCHIEDEN WIRD. DER NAME KOMMT DANACH.
+
+
+
+//ArchiveViewController
+deleteAlert = "هل تريد حذف كل الألعاب؟";
+deleteAlertText = "هل أنت متأكد أنك تريد حذف جميع الألعاب؟";
+deleteAlertSingle = "حذف اللعبة؟";
+deleteAlertTextSingle = "هل تريد حقا حذف اللعبة %d؟";
+deleteAlertTextSingleBefore = "هل تريد حقا حذف اللعبة ";
+deleteAlertTextSingleBehind = "؟"; //DAS BRAUCHT MAN IM ARABISCHEN NICHT, DA DER NAME/ZAHL DES SPIELS AM ENDE DES SATZES KOMMT.
+delete = "حذف";
+cancel = "إلغاء";
+
+NimArchive = "أرشيف لعبة نيم";
+
+
+//Global
+archiveNewAlert = "فتح أرشيف جديد";
+archiveNewText = "ماذا تريد أن تفعل؟";
+archiveRemove = "حذف الأرشيف القديم";
+archiveAdd = "اضافة أرشيف قديم";
+
+error = "خطأ";
+errorNotRead = "لا يمكن قراءة الملف.";
+errorUnknown = "حدث خطأ غير معروف.";
+errorFileType = "التطبيق لا يمكنه التعرف على نوع الملف.";

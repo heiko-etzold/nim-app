@@ -1,0 +1,82 @@
+/*
+  Localizable.strings
+  Nim
+
+  Created by Heiko Etzold
+  MIT License
+
+*/
+
+
+// ViewController
+fields = "fields";
+oneTile = "1 counter";
+twoTiles = "1 or 2 counters";
+threeTiles = "1, 2, or 3 counters";
+fourTiles = "1, 2, 3, or 4 counters";
+lastWins = "last field wins";
+lastLoses = "last field loses";
+
+
+// GameViewController
+left = "Left";
+right = "Right";
+beginner = "Who is starting?";
+placeTilesInOrder = "You have to place the counters from left to right.";
+placeAtLeastOne = "You have to place at least one counter.";
+turnName = "It's %@'s turn.";
+ready = "finished";
+selectPlayer = "First you have to choose who is starting.";
+winner = "%@ has won.";
+
+
+//ArchiveViewController
+deleteAlert = "Delete all games?";
+deleteAlertText = "Do you really want to delete all games?";
+deleteAlertSingle = "Delete game?";
+deleteAlertTextSingle = "Do you really want to delete game %d?";
+deleteAlertTextSingleBefore = "Do you really want to delete game ";
+deleteAlertTextSingleBehind = "?";
+delete = "Delete";
+cancel = "Cancel";
+
+NimArchive = "Nim Archive";
+
+
+//Global
+archiveNewAlert = "Open new Archive";
+archiveNewText = "What do you want to do?";
+archiveRemove = "Overwrite old Archive";
+archiveAdd = "Expand old Archive";
+
+error = "Error";
+errorNotRead = "The file cannot be read.";
+errorUnknown = "An unknown error has occurred.";
+errorFileType = "The file type is not supported by the app.";
+
+
+
+
+//Accessibility
+
+selectLeftColor = "select left color";
+selectRightColor = "select right color";
+insertLeftName = "insert name of left player";
+insertRightName = "insert name of right player";
+
+
+noNumber = "no numbering";
+fifthNumber = "number every fifth field";
+allNumber = "number all fields";
+changeLose = "activate last field loses";
+changeWin = "activate last field wins";
+
+red = "red";
+blue = "blue";
+yellow = "yellow";
+green = "green";
+orange = "orange";
+purple = "purple";
+doubleTap = "double tap to select";
+fieldOf = "field %i of %i";
+fieldMarked = "field is marked %@";

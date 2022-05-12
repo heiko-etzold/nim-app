@@ -1,0 +1,55 @@
+/*
+  Localizable.strings
+  Nim
+
+  Created by Heiko Etzold on 07.03.22.
+  MIT License
+
+*/
+
+
+// ViewController
+fields = "fields";
+oneTile = "1 tile";
+twoTiles = "1 or 2 tiles";
+threeTiles = "1, 2, or 3 tiles";
+fourTiles = "1, 2, 3, or 4 tiles";
+lastWins = "last field wins";
+lastLoses = "last field loses";
+
+
+// GameViewController
+left = "Left";
+right = "Right";
+beginner = "Who begins?";
+placeTilesBeforeNumber = "Place a maximum of ";
+placeTilesBehindNumber = " tiles";
+placeTilesInOrder = "You have to place the tiles in order from left to right.";
+placeAtLeastOne = "You have to place at least one tile.";
+turnBeforeName = "It's ";
+turnBehindName = "'s turn";
+ready = "ready";
+noMoreTilesBeforeNumber = "You may not place more than ";
+noMoreTilesBehindNumber = " tiles";
+selectPlayer = "First you have to choose who begins.";
+winner = " wins";
+
+
+//ArchiveViewController
+deleteAlert = "Delete all games?";
+deleteAlertText = "Do you really want to delete all games?";
+delete = "Delete";
+cancel = "Cancel";
+
+
+//Global
+archiveNewAlert = "Open new Archive";
+archiveNewText = "What do you want to do?";
+archiveRemove = "Overwrite old Archive";
+archiveAdd = "Expand old Archive";
+
+error = "Error";
+errorNotRead = "The file cannot be read.";
+errorUnknown = "An unknown error has occurred.";
+errorFileType = "The file type is not supported by the app.";
+

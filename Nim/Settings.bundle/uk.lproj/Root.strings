@@ -1,0 +1,11 @@
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+"Numbering of Fields" = "Нумерація";
+"Allow User to Change Numbering of Fields" = "Дозволяє змінювати нумерацію полів";
+
+
+"none" = "немає";
+"every fifth" = "кожне п'яте";
+"all" = "усі";
+
+"Archive" = "Архів";

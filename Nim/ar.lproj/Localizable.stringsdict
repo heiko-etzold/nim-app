@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PlaceCounters</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>ضع كحد أقصى %#@counters@.</string>
+		<key>counters</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>قرص واحد</string>
+			<key>two</key>
+			<string>قرصين</string>
+			<key>other</key>
+			<string>%d أقراص</string>
+		</dict>
+	</dict>
+    <key>NoMorePlaceCounters</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>ضع كحد أقصىلا يجوز لك وضع أكثر من %#@counters@.</string>
+        <key>counters</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>one</key>
+            <string>قرص واحد</string>
+            <key>two</key>
+            <string>قرصين</string>
+            <key>other</key>
+            <string>%d أقراص</string>
+        </dict>
+    </dict>
+</dict>
+</plist>

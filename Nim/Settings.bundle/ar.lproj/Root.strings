@@ -1,0 +1,14 @@
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+"Numbering of Fields" = "ترقيم المربعات";
+"Allow User to Change Numbering of Fields" = "السماح بتغيير ترقيم المربعات";
+
+
+"none" = "لا شيء";
+"every fifth" = "كل خمسة مربعات";
+"all" = "كل المربعات";
+
+"Archive" = "أرشيف";
+"Allow Individual Export" = "السماح بتصدير ملف";
+"Anonymize Names for Export" = "إخفاء الأسماء للتصدير";
+

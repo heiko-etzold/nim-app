@@ -1,0 +1,14 @@
+/*
+  InfoPlist.strings
+  Nim
+
+  Created by Heiko Etzold
+  MIT License
+
+*/
+
+"CFBundleDisplayName" = "نيم";
+"CFBundleName" = "نيم";
+
+"Nim" = "نيم";
+"Nim Archive" = "أرشيف لعبة نيم";

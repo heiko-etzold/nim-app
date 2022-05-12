@@ -1,0 +1,11 @@
+/*
+  InfoPlist.strings
+  Nim
+
+  Created by Heiko Etzold 
+  MIT License
+
+*/
+
+"Nim" = "Nim";
+"Nim Archive" = "Nim-Archiv";

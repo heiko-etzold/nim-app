@@ -1,0 +1,11 @@
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+"Numbering of Fields" = "Numérotation des cases";
+"Allow User to Change Numbering of Fields" = "Autoriser la modification de la numérotation des cases";
+
+
+"none" = "aucune";
+"every fifth" = "chaque cinquième";
+"all" = "toutes";
+
+"Archive" = "Archives";

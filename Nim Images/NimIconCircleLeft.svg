@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Generator: Apple Native CoreSVG 175-->
+
+<svg
+   version="1.1"
+   width="30"
+   height="20"
+   id="svg1012"
+   sodipodi:docname="NimIconCircleLeft.svg"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1016" />
+  <sodipodi:namedview
+     id="namedview1014"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="3.4381262"
+     inkscape:cx="21.814208"
+     inkscape:cy="28.067615"
+     inkscape:window-width="1410"
+     inkscape:window-height="705"
+     inkscape:window-x="0"
+     inkscape:window-y="44"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1012" />
+  <!--glyph: "uni100E89.medium", point size: 100.0, font version: "17.3d3e1", template writer version: "65.1"-->
+  <g
+     id="Regular-M"
+     transform="matrix(0.2344623,0,0,0.2344623,-2.0451349,18.261235)">
+    <path
+       d="m 37.1045,-6.83762 q 7.7956,0 14.2368,-3.85658 6.4413,-3.8566 10.2979,-10.3084 3.8566,-6.4518 3.8566,-14.258 0,-5.8547 -2.206,-10.9881 -2.206,-5.1333 -6.1197,-9.0522 -3.9137,-3.9189 -9.0676,-6.125 -5.154,-2.2061 -10.998,-2.2061 -5.8758,0 -11.0144,2.2061 -5.1386,2.2061 -9.0522,6.125 -3.9137,3.9189 -6.1145,9.0522 -2.20074,5.1334 -2.20074,10.9881 0,7.8062 3.82544,14.258 3.8254,6.4518 10.2772,10.3084 6.4518,3.85658 14.2792,3.85658 z m 71.1895,0 q 7.795,0 14.237,-3.85658 6.441,-3.8566 10.292,-10.3084 3.852,-6.4518 3.852,-14.258 0,-5.8547 -2.201,-10.9881 -2.201,-5.1333 -6.115,-9.0522 -3.913,-3.9189 -9.067,-6.125 -5.154,-2.2061 -10.998,-2.2061 -5.876,0 -11.0147,2.2061 -5.1385,2.2061 -9.0522,6.125 -3.9137,3.9189 -6.1145,9.0522 -2.2007,5.1334 -2.2007,10.9881 0,7.8062 3.8254,14.258 3.8254,6.4518 10.272,10.3084 6.4467,3.85658 14.2847,3.85658 z m 0,-7.85348 q -5.641,0 -10.2956,-2.7894 -4.6542,-2.7894 -7.449,-7.4384 -2.7947,-4.649 -2.7947,-10.3417 0,-5.6412 2.7947,-10.316 2.7948,-4.6748 7.449,-7.4384 4.6546,-2.7635 10.2956,-2.7635 5.609,0 10.284,2.7947 4.675,2.7947 7.464,7.4437 2.79,4.649 2.79,10.2795 0,5.6304 -2.79,10.3053 -2.789,4.6749 -7.464,7.4696 -4.675,2.7946 -10.284,2.7946 z"
+       id="path972" />
+  </g>
+</svg>

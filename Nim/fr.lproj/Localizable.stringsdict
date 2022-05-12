@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PlaceCounters</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Mets au maximum %#@counters@.</string>
+		<key>counters</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d plaque</string>
+			<key>other</key>
+			<string>%d plaques</string>
+		</dict>
+	</dict>
+    <key>NoMorePlaceCounters</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>On peut pas mettre plus que %#@counters@.</string>
+        <key>counters</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>one</key>
+            <string>%d plaque</string>
+            <key>other</key>
+            <string>%d plaques</string>
+        </dict>
+    </dict>
+</dict>
+</plist>

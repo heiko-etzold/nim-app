@@ -1,0 +1,81 @@
+/*
+  Localizable.strings
+  Nim
+
+  Created by Heiko Etzold
+  MIT License
+
+*/
+
+
+// ViewController
+fields = "Felder";
+oneTile = "1 Plättchen";
+twoTiles = "1 oder 2 Plättchen";
+threeTiles = "1, 2 oder 3 Plättchen";
+fourTiles = "1, 2, 3 oder 4 Plättchen";
+lastWins = "letztes Feld gewinnt";
+lastLoses = "letztes Feld verliert";
+
+
+// GameViewController
+left = "Links";
+right = "Rechts";
+beginner = "Wer beginnt?";
+placeTilesInOrder = "Du musst die Plättchen der Reihenfolge nach von links nach rechts legen.";
+placeAtLeastOne = "Du musst mindestens ein Plättchen legen.";
+turnName = "%@ ist dran.";
+ready = "fertig";
+selectPlayer = "Du musst erst auswählen, wer beginnt.";
+winner = "%@ hat gewonnen.";
+
+
+//ArchiveViewController
+deleteAlert = "Alle Spiele löschen?";
+deleteAlertText = "Möchtest du wirklich alle Spiele löschen?";
+deleteAlertSingle = "Spiel löschen?";
+deleteAlertTextSingle = "Möchtest du wirklich Spiel %d löschen?";
+deleteAlertTextSingleBefore = "Möchtest du wirklich Spiel ";
+deleteAlertTextSingleBehind = " löschen?";
+delete = "Löschen";
+cancel = "Abbrechen";
+
+NimArchive = "Nim-Archiv";
+
+
+//Global
+archiveNewAlert = "Neues Archiv öffnen";
+archiveNewText = "Was möchtest du tun?";
+archiveRemove = "Altes Archiv überschreiben";
+archiveAdd = "Altes Archiv erweitern";
+
+error = "Fehler";
+errorNotRead = "Die Datei kann nicht gelesen werden.";
+errorUnknown = "Ein unbekannter Fehler ist aufgetreten.";
+errorFileType = "Der Dateityp wird von der App nicht unterstützt.";
+
+
+
+
+//Accessibility
+
+selectLeftColor = "Wähle linke Farbe";
+selectRightColor = "Wähle rechte Farbe";
+insertLeftName = "hier Namen des linken Spielers eingeben";
+insertRightName = "hier Namen des rechten Spielers eingeben";
+
+noNumber = "keine Nummerierung";
+fifthNumber = "nummeriere jedes fünfte Feld";
+allNumber = "nummeriere alle Felder";
+changeLose = "aktiviere, dass letztes Feld verliert";
+changeWin = "aktiviere, dass letztes Feld gewinnt";
+
+red = "rot";
+blue = "blau";
+yellow = "gelb";
+green = "grün";
+orange = "orange";
+purple = "violett";
+doubleTap = "zum Auswählen doppeltippen";
+fieldOf = "Feld %i von %i";
+fieldMarked = "Feld ist %@ markiert";

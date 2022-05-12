@@ -1,0 +1,55 @@
+/*
+  Localizable.strings
+  Nim
+
+  Created by Heiko Etzold
+  MIT License
+
+*/
+
+
+// ViewController
+fields = "полів";
+oneTile = "1 фішка";
+twoTiles = "1 або 2 фішки";
+threeTiles = "1, 2 або 3 фішки";
+fourTiles = "1, 2, 3 або 4 фішки";
+lastWins = "останнє поле виграє";
+lastLoses = "останнє поле програє";
+
+
+// GameViewController
+left = "Ліворуч";
+right = "Праворуч";
+beginner = "Хто починає?";
+placeTilesInOrder = "Розклади фішки зліва направо по порядку.";
+placeAtLeastOne = "Поклади хоча б одну фішку.";
+turnName = "%@ твоя черга.";
+ready = "готово";
+selectPlayer = "Вибери хто починає.";
+winner = "%@ виграв/виграла.";
+
+
+//ArchiveViewController
+deleteAlert = "Видалити всі ігри?";
+deleteAlertText = "Ти точно бажаєш видалити всі ігри?";
+deleteAlertSingle = "Видалити гру?";
+deleteAlertTextSingle = "Ти точно бажаєш видалити гру %d?";
+deleteAlertTextSingleBefore = "Ти точно бажаєш видалити гру ";
+deleteAlertTextSingleBehind = "?";
+delete = "Видалити";
+cancel = "Повернутись";
+
+NimArchive = "Нім-Архів";
+
+
+//Global
+archiveNewAlert = "Відкрити новий архів";
+archiveNewText = "Що ти хочеш робити?";
+archiveRemove = "Записати поверх старого архіву";
+archiveAdd = "  Розширити старий архів";
+
+error = "Помилка";
+errorNotRead = "Файл не може бути прочитаний.";
+errorUnknown = "Невідома помилка";
+errorFileType = "Цей тип даних не підтримується.";

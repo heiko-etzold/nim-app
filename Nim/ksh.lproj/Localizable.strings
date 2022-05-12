@@ -1,0 +1,57 @@
+/*
+  Localizable.strings
+  Nim
+
+  Created by Heiko Etzold
+  MIT License
+
+*/
+
+
+// ViewController
+fields = "Felder";
+oneTile = "1 Pläätche";
+twoTiles = "1 oder 2 Pläätcher";
+threeTiles = "1, 2 oder 3 Pläätcher";
+fourTiles = "1, 2, 3 oder 4 Pläätcher";
+lastWins = "Et letzte Feld gewennt.";
+lastLoses = "Et letzte Feld verliert.";
+
+
+// GameViewController
+left = "Links";
+right = "Rähts";
+beginner = "Wä fängk aan?";
+placeTilesInOrder = "Do muss die Pläätcher noh der Reih vun links noh rähts läge.";
+placeAtLeastOne = "Do muss mindestens ei Pläätche läge.";
+turnName = "%@ es draan.";
+ready = "Fäädig";
+selectPlayer = "Do muss eets ens ussöke, wä aanfängk.";
+winner = "%@ hät gewonne.";
+
+
+//ArchiveViewController
+deleteAlert = "De Spille all lösche?";
+deleteAlertText = "Wells do ungeloge de Spille all lösche?";
+deleteAlertSingle = "Spill lösche?";
+deleteAlertTextSingle = "Wells do ungeloge Spill %d lösche?";
+deleteAlertTextSingleBefore = "Wells do ungeloge Spill ";
+deleteAlertTextSingleBehind = " lösche?";
+delete = "Lösche";
+cancel = "Avbreche";
+
+NimArchive = "Nim-Archiv";
+
+
+//Global
+archiveNewAlert = "Neu Archiv opmaache";
+archiveNewText = "Wat wells do dun?";
+archiveRemove = "Dat aale Archiv üvverschrieve";
+archiveAdd = "Dat aale Archiv usbaue";
+
+error = "Fähler";
+errorNotRead = "Die Datei kunnt nit gelese weede.";
+errorUnknown = "Ene unbekannte Fähler es opgetrodde.";
+errorFileType = "Dä Dateityp weed vun dä App nit ungerstütz.";
+
+
