@@ -1,0 +1,13 @@
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+"Numbering of Fields" = "Númerun reita";
+"Allow User to Change Numbering of Fields" = "Leyfa númerun reita";
+
+"none" = "engin";
+"every fifth" = "fimmta hvern";
+"all" = "alla";
+
+
+"Archive" = "Spilasafn";
+"Allow Individual Export" = "Leyfa útflutning einstakra spila";
+"Anonymize Names for Export" = "Fela nöfn þátttakenda";

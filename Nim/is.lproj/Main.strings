@@ -1,0 +1,46 @@
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "e5X-0v-4E4"; */
+"e5X-0v-4E4.title" = "Stillingar";
+
+/* Class = "UINavigationItem"; title = "Nim Game"; ObjectID = "BuW-F8-TyD"; */
+"BuW-F8-TyD.title" = "Nim-spilið";
+
+/* Class = "UINavigationItem"; title = "Archive"; ObjectID = "vkt-RJ-T0d"; */
+"vkt-RJ-T0d.title" = "Spilasafn";
+
+/* Class = "UINavigationItem"; title = "Explore Nim Game"; ObjectID = "axv-iq-DZL"; */
+"axv-iq-DZL.title" = "Skoða spilið nánar";
+
+
+
+/* Class = "UIBarButtonItem"; title = "Start"; ObjectID = "cLV-Up-Jvh"; */
+"cLV-Up-Jvh.title" = "Byrja";
+"0hd-WV-14P.normalTitle" = "Byrja";
+
+
+/* Class = "UITextField"; placeholder = "add name here"; ObjectID = "Lve-u8-C2w"; */
+"Lve-u8-C2w.placeholder" = "Skráðu nafn hér";
+
+/* Class = "UITextField"; placeholder = "add name here"; ObjectID = "bXK-KR-Ive"; */
+"bXK-KR-Ive.placeholder" = "Skráðu nafn hér";
+
+
+
+/* Class = "UIButton"; configuration.title = "explore game"; ObjectID = "nJc-i6-I7O"; */
+"nJc-i6-I7O.normalTitle" = "Skoða spilið nánar";
+
+/* Class = "UIButton"; configuration.title = "delete game"; ObjectID = "TJg-74-Zi5"; */
+"TJg-74-Zi5.normalTitle" = "Eyða spili";
+
+
+
+/* Class = "UIButton"; configuration.title = "new game"; ObjectID = "ZUo-zC-Bh5"; */
+"ZUo-zC-Bh5.normalTitle" = "Nýtt spil";
+
+/* Class = "UIButton"; configuration.title = "new game"; ObjectID = "u3K-WS-qT8"; */
+"u3K-WS-qT8.normalTitle" = "Nýtt spil";
+
+/* Class = "UIButton"; configuration.title = "archive game"; ObjectID = "9be-ek-iOF"; */
+"9be-ek-iOF.normalTitle" = "Vista spil";
+
+/* Class = "UIButton"; configuration.title = "archive game"; ObjectID = "xQ6-EH-aOV"; */
+"xQ6-EH-aOV.normalTitle" = "Vista spil";

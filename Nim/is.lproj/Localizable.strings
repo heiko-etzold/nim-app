@@ -2,54 +2,55 @@
   Localizable.strings
   Nim
 
-  Created by Heiko Etzold on 07.03.22.
+  Created by Heiko Etzold
   MIT License
 
 */
 
 
 // ViewController
-fields = "fields";
-oneTile = "1 tile";
-twoTiles = "1 or 2 tiles";
-threeTiles = "1, 2, or 3 tiles";
-fourTiles = "1, 2, 3, or 4 tiles";
-lastWins = "last field wins";
-lastLoses = "last field loses";
+fields = "reitir";
+oneTile = "1 skífa";
+twoTiles = "1 eða 2 skífur";
+threeTiles = "1, 2 eða 3 skífur";
+fourTiles = "1, 2, 3 eða 4 skífur";
+lastWins = "síðasti reitur vinnur";
+lastLoses = "síðasti reitur tapar";
 
 
 // GameViewController
-left = "Left";
-right = "Right";
-beginner = "Who begins?";
-placeTilesBeforeNumber = "Place a maximum of ";
-placeTilesBehindNumber = " tiles";
-placeTilesInOrder = "You have to place the tiles in order from left to right.";
-placeAtLeastOne = "You have to place at least one tile.";
-turnBeforeName = "It's ";
-turnBehindName = "'s turn";
-ready = "ready";
-noMoreTilesBeforeNumber = "You may not place more than ";
-noMoreTilesBehindNumber = " tiles";
-selectPlayer = "First you have to choose who begins.";
-winner = " wins";
+left = "Vinstri";
+right = "Hægri";
+beginner = "Hver byrjar?";
+placeTilesInOrder = "Leggja þarf skífurnar í röð frá vinstri til hægri.";
+placeAtLeastOne = "Leggja þarf a.m.k. eina skífu.";
+turnName = "%@ á að gera.";
+ready = "Staðfesta";
+selectPlayer = "First you have to choose who is starting.";
+winner = "%@ vann.";
 
 
 //ArchiveViewController
-deleteAlert = "Delete all games?";
-deleteAlertText = "Do you really want to delete all games?";
-delete = "Delete";
-cancel = "Cancel";
+deleteAlert = "Eyða öllum spilum?";
+deleteAlertText = "Ertu viss um að þú viljir eyða öllum spilum?";
+deleteAlertSingle = "Eyða spili?";
+deleteAlertTextSingle = "Ertu viss um að þú viljir eyða spili %d?";
+delete = "Eyða";
+cancel = "Hætta við";
+
+NimArchive = "Nim Spilasafn";
 
 
 //Global
-archiveNewAlert = "Open new Archive";
-archiveNewText = "What do you want to do?";
-archiveRemove = "Overwrite old Archive";
-archiveAdd = "Expand old Archive";
+archiveNewAlert = "Opna nýtt spilasafn";
+archiveNewText = "Hvað viltu gera?";
+archiveRemove = "Rita yfir eldra spilasafn";
+archiveAdd = "Bæta inn í eldra spilasafn";
 
-error = "Error";
-errorNotRead = "The file cannot be read.";
-errorUnknown = "An unknown error has occurred.";
-errorFileType = "The file type is not supported by the app.";
+error = "Villa";
+errorNotRead = "Skjalið er ólæsilegt.";
+errorUnknown = "Óþekkt villa kom upp.";
+errorFileType = "Smáforritið styður ekki við þessa skráargerð.";
+
+
 

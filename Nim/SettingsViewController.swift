@@ -172,6 +172,7 @@ class SettingsViewController: UIViewController, UIDocumentPickerDelegate, UIText
             for tileLabel in listOfLabels{
                 if (tileLabel.index <= numberOfFields){
                     tileLabel.alpha = 1
+                    tileLabel.layoutSubviews()
                 }
                 else{
                     tileLabel.alpha = 0

@@ -55,6 +55,10 @@
 		B3D0988827E4862000DA9686 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		B3D0988927E4862000DA9686 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B3D0988A27E4862000DA9686 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B3D1E79228915BB100DCBB0F /* is */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = is; path = is.lproj/Main.strings; sourceTree = "<group>"; };
+		B3D1E79328915BB200DCBB0F /* is */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = is; path = is.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		B3D1E79428915BCA00DCBB0F /* is */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = is; path = is.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B3D1E79528915BD000DCBB0F /* is */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = is; path = is.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B3D7043127EBBB71004625D9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		B3D7043227EBBB71004625D9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B3D7043327EBBB71004625D9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 				ar,
 				ru,
 				ksh,
+				is,
 			);
 			mainGroup = B39288622718A8130058DEC4;
 			productRefGroup = B392886C2718A8130058DEC4 /* Products */;
@@ -227,6 +232,7 @@
 				B3D0988827E4862000DA9686 /* ar */,
 				B3D7043127EBBB71004625D9 /* ru */,
 				B37BD49E2819D368004D3ECF /* ksh */,
+				B3D1E79228915BB100DCBB0F /* is */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 				B3D7044127EC9CA3004625D9 /* fr */,
 				B3D7044227EC9D3F004625D9 /* ar */,
 				B37BD49F2819D368004D3ECF /* ksh */,
+				B3D1E79328915BB200DCBB0F /* is */,
 			);
 			name = Localizable.stringsdict;
 			sourceTree = "<group>";
@@ -263,6 +270,7 @@
 				B3D0988927E4862000DA9686 /* ar */,
 				B3D7043227EBBB71004625D9 /* ru */,
 				B37BD4A02819D369004D3ECF /* ksh */,
+				B3D1E79428915BCA00DCBB0F /* is */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -277,6 +285,7 @@
 				B3D0988A27E4862000DA9686 /* ar */,
 				B3D7043327EBBB71004625D9 /* ru */,
 				B37BD4A12819D369004D3ECF /* ksh */,
+				B3D1E79528915BD000DCBB0F /* is */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -409,7 +418,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Nim/Nim.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 25;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FJWHQYBD25;
 				INFOPLIST_FILE = Nim/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -417,6 +426,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.heiko-etzold.nim";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
@@ -432,7 +442,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Nim/Nim.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 25;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FJWHQYBD25;
 				INFOPLIST_FILE = Nim/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -440,6 +450,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.heiko-etzold.nim";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;

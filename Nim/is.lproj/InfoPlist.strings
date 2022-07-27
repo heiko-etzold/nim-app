@@ -2,7 +2,10 @@
   InfoPlist.strings
   Nim
 
-  Created by Heiko Etzold on 07.03.22.
+  Created by Heiko Etzold
   MIT License
 
 */
+
+"Nim" = "Nim";
+"Nim Archive" = "Nim Spilasafn";

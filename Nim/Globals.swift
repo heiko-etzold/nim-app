@@ -516,6 +516,9 @@ func renewNumbersInViews(currentNavigationController: UINavigationController){
             if let gameFieldVieww = settingsVC.gameContainerView{
                 for label in gameFieldVieww.subviews.filter({$0 is TileLabel}){
                     label.layoutSubviews()
+                    if((label as! TileLabel).index > settingsVC.numberOfFields){
+                        label.alpha = 0
+                    }
                 }
             }
         }
@@ -524,6 +527,9 @@ func renewNumbersInViews(currentNavigationController: UINavigationController){
             gameVC.numberModeSegmentControl.selectedSegmentIndex = numberMode.rawValue
             for label in gameVC.gameContainerView.subviews.filter({$0 is TileLabel}){
                 label.layoutSubviews()
+                if((label as! TileLabel).index > gameVC.numberOfTiles){
+                    label.alpha = 0
+                }
             }
         }
         if let archiveVC = currentVC as? ArchiveViewController{
@@ -536,6 +542,7 @@ func renewNumbersInViews(currentNavigationController: UINavigationController){
             gameResearchVC.numberModeSegmentControl.selectedSegmentIndex = numberMode.rawValue
             for label in gameResearchVC.referenceGameContainerView.subviews.filter({$0 is TileLabel}){
                 label.layoutSubviews()
+               
             }
         }
     }
