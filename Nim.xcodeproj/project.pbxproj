@@ -35,6 +35,10 @@
 		B34ED2492718ABF700545CA0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		B35883B627D60BA000130C95 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		B35883B927D63CEB00130C95 /* Nim.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nim.entitlements; sourceTree = "<group>"; };
+		B363422D2892A83500C4BB6B /* nds */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nds; path = nds.lproj/Main.strings; sourceTree = "<group>"; };
+		B363422E2892A83500C4BB6B /* nds */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = nds; path = nds.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		B363422F2892A83500C4BB6B /* nds */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nds; path = nds.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B36342302892A83600C4BB6B /* nds */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nds; path = nds.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B37BD49E2819D368004D3ECF /* ksh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ksh; path = ksh.lproj/Main.strings; sourceTree = "<group>"; };
 		B37BD49F2819D368004D3ECF /* ksh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ksh; path = ksh.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		B37BD4A02819D369004D3ECF /* ksh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ksh; path = ksh.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 				ru,
 				ksh,
 				is,
+				nds,
 			);
 			mainGroup = B39288622718A8130058DEC4;
 			productRefGroup = B392886C2718A8130058DEC4 /* Products */;
@@ -233,6 +238,7 @@
 				B3D7043127EBBB71004625D9 /* ru */,
 				B37BD49E2819D368004D3ECF /* ksh */,
 				B3D1E79228915BB100DCBB0F /* is */,
+				B363422D2892A83500C4BB6B /* nds */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -256,6 +262,7 @@
 				B3D7044227EC9D3F004625D9 /* ar */,
 				B37BD49F2819D368004D3ECF /* ksh */,
 				B3D1E79328915BB200DCBB0F /* is */,
+				B363422E2892A83500C4BB6B /* nds */,
 			);
 			name = Localizable.stringsdict;
 			sourceTree = "<group>";
@@ -271,6 +278,7 @@
 				B3D7043227EBBB71004625D9 /* ru */,
 				B37BD4A02819D369004D3ECF /* ksh */,
 				B3D1E79428915BCA00DCBB0F /* is */,
+				B363422F2892A83500C4BB6B /* nds */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -286,6 +294,7 @@
 				B3D7043327EBBB71004625D9 /* ru */,
 				B37BD4A12819D369004D3ECF /* ksh */,
 				B3D1E79528915BD000DCBB0F /* is */,
+				B36342302892A83600C4BB6B /* nds */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

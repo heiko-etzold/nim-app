@@ -1,0 +1,53 @@
+/*
+  Localizable.strings
+  Nim
+
+  Created by Heiko Etzold
+  MIT License
+
+*/
+
+
+// ViewController
+fields = "Felden";
+oneTile = "1 Knoop";
+twoTiles = "1 oder 2 Knööp";
+threeTiles = "1, 2, oder 3 Knööp";
+fourTiles = "1, 2, 3, oder 4 Knööp";
+lastWins = "dat letzte Feld winnt";
+lastLoses = "dat letzte Feld verleert";
+
+
+// GameViewController
+left = "Links";
+right = "Rechts";
+beginner = "Wokeen fangt an?";
+placeTilesInOrder = "Du müsst de Knööp in de Reeg vun links na rechts leggen.";
+placeAtLeastOne = "Du müsst tominnst en Knoop leggen.";
+turnName = "%@ is an de Reeg.";
+ready = "fardig";
+selectPlayer = "Du müsst eerst utsöken, wokeen anfangen deit.";
+winner = "%@ hett wunnen.";
+
+
+//ArchiveViewController
+deleteAlert = "All Spelen löschen?";
+deleteAlertText = "Muchst du würklich all Spelen löschen?";
+deleteAlertSingle = "Seep löschen?";
+deleteAlertTextSingle = "Muchst du würklich Speel %d löschen?";
+delete = "Löschen";
+cancel = "Afbreken";
+
+NimArchive = "Nim-Archiv";
+
+
+//Global
+archiveNewAlert = "Nee Archiv opmaken";
+archiveNewText = "Wat muchst du maken?";
+archiveRemove = "Dat ole Archiv överschrieven";
+archiveAdd = "Dat ole Archiv vergröttern";
+
+error = "Fehler";
+errorNotRead = "De Datei kannn nich leest warrn.";
+errorUnknown = "En unbekannt Fehler is passeert.";
+errorFileType = "De Dateityp warrt vun de App nich ünnerstütt.";
