@@ -25,7 +25,114 @@ class TmpLayout : UICollectionViewFlowLayout{
     }
 }
 
+
+
+class ArchiveCollectionView : UICollectionView, UICollectionViewDragDelegate, UICollectionViewDropDelegate{
+    
+    fileprivate func reorderItems (coordinator: UICollectionViewDropCoordinator, destinationIndexPath: IndexPath, collectionView: UICollectionView) {
+        
+        if let item = coordinator.items.first,
+        let sourceIndexPath = item.sourceIndexPath {
+            self.performBatchUpdates({
+                
+                let archiveEntryAtSourceIndex = listOfArchiveEntries[sourceIndexPath.item]
+                collectionView.deleteItems(at: [sourceIndexPath])
+                collectionView.insertItems(at: [destinationIndexPath])
+                listOfArchiveEntries.remove(at: sourceIndexPath.item)
+                listOfArchiveEntries.insert(archiveEntryAtSourceIndex, at: destinationIndexPath.item)
+                saveArchive()
+
+//                print("reorder \(sourceIndexPath) to \(destinationIndexPath)")
+//                //            coordinator.drop(item.dragItem, toItemAt: destinationIndexPath)
+
+            }, completion: {_ in
+                collectionView.reloadData()
+                
+            })
+//            coordinator.drop(item.dragItem, toItemAt: destinationIndexPath)
+
+            
+        }
+        
+        
+        
+        
+        
+//        if let item = coordinator.items.first,
+//           let sourceIndexPath = item.sourceIndexPath {
+//            collectionView.performBatchUpdates({
+//                self.items.remove(at: sourceIndexPath.item)
+//                self.items.insert(item.dragItem. localObject as! String, at: destinationIndexPath.item)
+//                collectionView.deleteItems(at: [sourceIndexPath])
+//                collectionView.insertItems(at: [destinationIndexPath])
+//            }, completion: nil)
+//            coordinator.drop(item.dragItem, toltemAt: destinationIndexPath)
+//        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, performDropWith coordinator: UICollectionViewDropCoordinator) {
+        
+        var destinationIndexPath: IndexPath
+        if let indexPath = coordinator.destinationIndexPath {
+            destinationIndexPath = indexPath
+        }
+        else {
+            let row = collectionView.numberOfItems(inSection: 0)
+            destinationIndexPath = IndexPath(item: row - 1, section: 0)
+        }
+        if coordinator.proposal.operation == .move {
+            self.reorderItems(coordinator: coordinator, destinationIndexPath: destinationIndexPath, collectionView: collectionView)
+        }
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
+        
+        let renderer = UIGraphicsImageRenderer(bounds: collectionView.cellForItem(at: indexPath)!.convert(collectionView.cellForItem(at: indexPath)!.bounds, to: self))
+        let image = renderer.image { rendererContext in
+            layer.render(in: rendererContext.cgContext)
+        }
+        
+    
+//        let itemPrice = "Hallo"
+//        let itemProvider = NSItemProvider(object: itemPrice as NSString)
+        let itemProvider = NSItemProvider(object: image as UIImage)
+        let dragItem = UIDragItem(itemProvider: itemProvider)
+//        dragItem.localObject = itemPrice
+        return [dragItem]
+        
+    }
+    
+    
+
+    func collectionView(_ collectionView: UICollectionView, dragSessionWillBegin session: UIDragSession) {
+        print("start")
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, dragSessionDidEnd session: UIDragSession) {
+        print("Ende")
+//        collectionView.reloadData()
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, dropSessionDidUpdate session: UIDropSession, withDestinationIndexPath destinationIndexPath: IndexPath?) -> UICollectionViewDropProposal {
+        print("drop Update")
+        
+        if(collectionView.hasActiveDrag){
+            return UICollectionViewDropProposal(operation: .move, intent: .insertAtDestinationIndexPath)
+        }
+        return UICollectionViewDropProposal(operation: .forbidden)
+    }
+    
+    
+    
+}
+
+
+
+
 class ArchiveViewController : UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIGestureRecognizerDelegate, UIPopoverPresentationControllerDelegate, UIDocumentPickerDelegate{
+    
     
     // hide status bar
     override var prefersStatusBarHidden: Bool{
@@ -68,12 +175,12 @@ class ArchiveViewController : UIViewController, UICollectionViewDelegate, UIColl
         return UIEdgeInsets(top: 5, left: 0, bottom: 15, right: 0)
     }
 
-    
+
     
     // MARK: Collection Initialization
     
     // initialize data and there updates
-    @IBOutlet weak var archiveCollectionView: UICollectionView!
+    @IBOutlet weak var archiveCollectionView: ArchiveCollectionView!
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -109,7 +216,10 @@ class ArchiveViewController : UIViewController, UICollectionViewDelegate, UIColl
         allowIndividualExportSettingSubscribber = UserDefaults.standard
                 .publisher(for: \.settings_allowIndividualExport)
                 .sink(receiveValue: {_ in self.changeVisibilityOfEditinButton()})
+        archiveCollectionView.dragDelegate = archiveCollectionView as! UICollectionViewDragDelegate
+        archiveCollectionView.dropDelegate = archiveCollectionView as! UICollectionViewDropDelegate
     }
+
     
     func changeVisibilityOfEditinButton(){
 
@@ -130,7 +240,7 @@ class ArchiveViewController : UIViewController, UICollectionViewDelegate, UIColl
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "archiveCell", for: indexPath)
-
+        
         // remove all subviews
         for subview in cell.contentView.subviews{
             subview.removeFromSuperview()
