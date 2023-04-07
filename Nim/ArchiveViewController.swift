@@ -30,44 +30,35 @@ class TmpLayout : UICollectionViewFlowLayout{
 class ArchiveCollectionView : UICollectionView, UICollectionViewDragDelegate, UICollectionViewDropDelegate{
     
     fileprivate func reorderItems (coordinator: UICollectionViewDropCoordinator, destinationIndexPath: IndexPath, collectionView: UICollectionView) {
-        
         if let item = coordinator.items.first,
         let sourceIndexPath = item.sourceIndexPath {
-            self.performBatchUpdates({
+
+            collectionView.performBatchUpdates({
                 
                 let archiveEntryAtSourceIndex = listOfArchiveEntries[sourceIndexPath.item]
-                collectionView.deleteItems(at: [sourceIndexPath])
-                collectionView.insertItems(at: [destinationIndexPath])
                 listOfArchiveEntries.remove(at: sourceIndexPath.item)
                 listOfArchiveEntries.insert(archiveEntryAtSourceIndex, at: destinationIndexPath.item)
                 saveArchive()
-
-//                print("reorder \(sourceIndexPath) to \(destinationIndexPath)")
-//                //            coordinator.drop(item.dragItem, toItemAt: destinationIndexPath)
-
-            }, completion: {_ in
+                collectionView.deleteItems(at: [sourceIndexPath])
+                collectionView.insertItems(at: [destinationIndexPath])
                 collectionView.reloadData()
-                
-            })
-//            coordinator.drop(item.dragItem, toItemAt: destinationIndexPath)
-
-            
+                if(sourceIndexPath.row < destinationIndexPath.row){
+                    for i in sourceIndexPath.row...destinationIndexPath.row{
+                        if let label = self.cellForItem(at: IndexPath(row: i, section: 0))?.contentView.subviews.first(where: {$0 is UILabel}) as? UILabel{
+                            label.text = "\(i)"
+                        }
+                    }
+                }
+                else{
+                    for i in destinationIndexPath.row...sourceIndexPath.row{
+                        if let label = self.cellForItem(at: IndexPath(row: i, section: 0))?.contentView.subviews.first(where: {$0 is UILabel}) as? UILabel{
+                            label.text = "\(2+i)"
+                        }
+                    }
+                }
+            }, completion: nil)
+            coordinator.drop(item.dragItem, toItemAt: destinationIndexPath)
         }
-        
-        
-        
-        
-        
-//        if let item = coordinator.items.first,
-//           let sourceIndexPath = item.sourceIndexPath {
-//            collectionView.performBatchUpdates({
-//                self.items.remove(at: sourceIndexPath.item)
-//                self.items.insert(item.dragItem. localObject as! String, at: destinationIndexPath.item)
-//                collectionView.deleteItems(at: [sourceIndexPath])
-//                collectionView.insertItems(at: [destinationIndexPath])
-//            }, completion: nil)
-//            coordinator.drop(item.dragItem, toltemAt: destinationIndexPath)
-//        }
     }
     
     func collectionView(_ collectionView: UICollectionView, performDropWith coordinator: UICollectionViewDropCoordinator) {
@@ -93,38 +84,19 @@ class ArchiveCollectionView : UICollectionView, UICollectionViewDragDelegate, UI
             layer.render(in: rendererContext.cgContext)
         }
         
-    
-//        let itemPrice = "Hallo"
-//        let itemProvider = NSItemProvider(object: itemPrice as NSString)
         let itemProvider = NSItemProvider(object: image as UIImage)
         let dragItem = UIDragItem(itemProvider: itemProvider)
-//        dragItem.localObject = itemPrice
         return [dragItem]
-        
     }
     
-    
-
-    func collectionView(_ collectionView: UICollectionView, dragSessionWillBegin session: UIDragSession) {
-        print("start")
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, dragSessionDidEnd session: UIDragSession) {
-        print("Ende")
-//        collectionView.reloadData()
-    }
     
     
     func collectionView(_ collectionView: UICollectionView, dropSessionDidUpdate session: UIDropSession, withDestinationIndexPath destinationIndexPath: IndexPath?) -> UICollectionViewDropProposal {
-        print("drop Update")
-        
         if(collectionView.hasActiveDrag){
             return UICollectionViewDropProposal(operation: .move, intent: .insertAtDestinationIndexPath)
         }
         return UICollectionViewDropProposal(operation: .forbidden)
     }
-    
-    
     
 }
 
@@ -200,8 +172,8 @@ class ArchiveViewController : UIViewController, UICollectionViewDelegate, UIColl
 
     override func viewDidLoad() {
         // add longPress, to enable cell movement
-        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongGesture))
-        archiveCollectionView.addGestureRecognizer(longPressGesture)
+//        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongGesture))
+//        archiveCollectionView.addGestureRecognizer(longPressGesture)
 
         dateFormatterForFileName.dateFormat = "yyyy-MM-dd_HH-mm"
         dateFormatterForFileName.locale = Locale(identifier: "en")
@@ -216,8 +188,8 @@ class ArchiveViewController : UIViewController, UICollectionViewDelegate, UIColl
         allowIndividualExportSettingSubscribber = UserDefaults.standard
                 .publisher(for: \.settings_allowIndividualExport)
                 .sink(receiveValue: {_ in self.changeVisibilityOfEditinButton()})
-        archiveCollectionView.dragDelegate = archiveCollectionView as! UICollectionViewDragDelegate
-        archiveCollectionView.dropDelegate = archiveCollectionView as! UICollectionViewDropDelegate
+        archiveCollectionView.dragDelegate = (archiveCollectionView!)
+        archiveCollectionView.dropDelegate = (archiveCollectionView!)
     }
 
     
@@ -476,13 +448,22 @@ class ArchiveViewController : UIViewController, UICollectionViewDelegate, UIColl
                         vc.popoverPresentationController?.permittedArrowDirections = [.left, .right]
                         vc.popoverPresentationController?.canOverlapSourceViewRect = true
                         
-                        if let researchButton = vc.view.subviews.first(where: {$0.restorationIdentifier == "exploreView"})?.subviews.first as? UIButton{
+//                        if let researchButton = vc.view.subviews.first(where: {$0.restorationIdentifier == "exploreView"})?.subviews.first as? UIButton{
+//                            researchButton.tag = -currentIndexPath.item
+//                            researchButton.addTarget(self, action: #selector(researchCellByPopoverButton), for: .touchUpInside)
+//                        }
+                        for researchButton in vc.view.subviews.first(where: {$0.restorationIdentifier == "exploreView"})?.subviews as! [UIButton]{
                             researchButton.tag = -currentIndexPath.item
                             researchButton.addTarget(self, action: #selector(researchCellByPopoverButton), for: .touchUpInside)
                         }
-                        if let removeButton = vc.view.subviews.first(where: {$0.restorationIdentifier == "removeView"})?.subviews.first as? UIButton{
+
+                        for removeButton in vc.view.subviews.first(where: {$0.restorationIdentifier == "removeView"})?.subviews as! [UIButton]{
                             removeButton.tag = -currentIndexPath.item
                             removeButton.addTarget(self, action: #selector(removeCellByPopoverButton), for: .touchUpInside)
+                        }
+                        for clipboardButton in vc.view.subviews.first(where: {$0.restorationIdentifier == "screenshotView"})?.subviews as! [UIButton]{
+                            clipboardButton.tag = -currentIndexPath.item
+                            clipboardButton.addTarget(self, action: #selector(clipboardCell), for: .touchUpInside)
                         }
                         if let dismissButton = vc.view.subviews.first(where: {$0.restorationIdentifier == "buttonView"})?.subviews.first as? UIButton{
                             dismissButton.addTarget(self, action: #selector(dismissPopover), for: .touchUpInside)
@@ -563,6 +544,29 @@ class ArchiveViewController : UIViewController, UICollectionViewDelegate, UIColl
         })
     }
 
+    @objc func clipboardCell(sender: UIButton){
+        clipbordCellByIndex(index: -sender.tag)
+    }
+    
+    func clipbordCellByIndex(index: Int){
+        let renderer = UIGraphicsImageRenderer(bounds: archiveCollectionView.cellForItem(at: IndexPath(row: index, section: 0))!.convert(archiveCollectionView.cellForItem(at: IndexPath(row: index, section: 0))!.bounds, to: archiveCollectionView))
+        let image = renderer.image { rendererContext in
+            archiveCollectionView.layer.render(in: rendererContext.cgContext)
+        }
+        let passPort = UIPasteboard.general
+        passPort.image = image
+        let snapshotView = UIView(frame: archiveCollectionView.cellForItem(at: IndexPath(row: index, section: 0))!.convert(archiveCollectionView.cellForItem(at: IndexPath(row: index, section: 0))!.bounds, to: view))
+        view.addSubview(snapshotView)
+        snapshotView.backgroundColor = .systemBackground
+        UIView.animate(withDuration: 0.5, animations: {
+            snapshotView.alpha = 0
+        }) { _ in
+            snapshotView.removeFromSuperview()
+        }
+    }
+    
+    
+    
     func removeCellByIndex(index: Int){
 
         archiveCollectionView.cellForItem(at: IndexPath(item: index, section: 0))?.alpha = 0.5
@@ -594,56 +598,57 @@ class ArchiveViewController : UIViewController, UICollectionViewDelegate, UIColl
     }
     
     // enable movement
-    @objc func handleLongGesture(sender: UILongPressGestureRecognizer){
-        
-        if(!editingIsActive){
-            switch(sender.state){
-                
-            case .began:
-                
-                guard let selectedIndexPath = archiveCollectionView.indexPathForItem(at: sender.location(in: archiveCollectionView))
-                else{
-                    break
-                }
-                archiveCollectionView.beginInteractiveMovementForItem(at: selectedIndexPath)
-                
-                if let barView = archiveCollectionView.cellForItem(at: selectedIndexPath)?.contentView.subviews.first(where: {$0.restorationIdentifier == "gameFieldView"}){
-                    moveViewRight(gameFieldView: barView)
-                }
-            case .changed:
-                archiveCollectionView.updateInteractiveMovementTargetPosition(sender.location(in: sender.view!))
-            case .ended:
-                archiveCollectionView.endInteractiveMovement()
-                
-            default:
-                archiveCollectionView.cancelInteractiveMovement()
-            }
-        }
-    }
+//    @objc func handleLongGesture(sender: UILongPressGestureRecognizer){
+//
+//        if(!editingIsActive){
+//            switch(sender.state){
+//
+//            case .began:
+//
+//                guard let selectedIndexPath = archiveCollectionView.indexPathForItem(at: sender.location(in: archiveCollectionView))
+//                else{
+//                    break
+//                }
+//                archiveCollectionView.beginInteractiveMovementForItem(at: selectedIndexPath)
+//
+//                if let barView = archiveCollectionView.cellForItem(at: selectedIndexPath)?.contentView.subviews.first(where: {$0.restorationIdentifier == "gameFieldView"}){
+//                    moveViewRight(gameFieldView: barView)
+//                }
+//            case .changed:
+//                archiveCollectionView.updateInteractiveMovementTargetPosition(sender.location(in: sender.view!))
+//            case .ended:
+//                archiveCollectionView.endInteractiveMovement()
+//
+//            default:
+//                archiveCollectionView.cancelInteractiveMovement()
+//            }
+//        }
+//    }
     
-    var offsetForCollectionViewCellBeingMoved: CGPoint = .zero
+//    var offsetForCollectionViewCellBeingMoved: CGPoint = .zero
     
-    func offsetOfTouchFrom(recognizer: UIGestureRecognizer, inCell cell: UICollectionViewCell) -> CGPoint {
-
-        let locationOfTouchInCell = recognizer.location(in: cell)
-
-        let cellCenterX = cell.frame.width / 2
-        let cellCenterY = cell.frame.height / 2
-
-        let cellCenter = CGPoint(x: cellCenterX, y: cellCenterY)
-
-        var offSetPoint = CGPoint.zero
-
-        offSetPoint.y = cellCenter.y - locationOfTouchInCell.y
-        offSetPoint.x = cellCenter.x - locationOfTouchInCell.x
-
-        return offSetPoint
-
-    }
+//    func offsetOfTouchFrom(recognizer: UIGestureRecognizer, inCell cell: UICollectionViewCell) -> CGPoint {
+//
+//        let locationOfTouchInCell = recognizer.location(in: cell)
+//
+//        let cellCenterX = cell.frame.width / 2
+//        let cellCenterY = cell.frame.height / 2
+//
+//        let cellCenter = CGPoint(x: cellCenterX, y: cellCenterY)
+//
+//        var offSetPoint = CGPoint.zero
+//
+//        offSetPoint.y = cellCenter.y - locationOfTouchInCell.y
+//        offSetPoint.x = cellCenter.x - locationOfTouchInCell.x
+//
+//        return offSetPoint
+//
+//    }
     
     
     
     // change cells when moved
+    /*
     func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         let archiveEntryAtSourceIndex = listOfArchiveEntries[sourceIndexPath.item]
         listOfArchiveEntries.remove(at: sourceIndexPath.item)
@@ -651,6 +656,7 @@ class ArchiveViewController : UIViewController, UICollectionViewDelegate, UIColl
         saveArchive()
         collectionView.reloadData()
     }
+     */
 
     //reorder all cells, depending on length of bar
     var orderingIsAscent = Bool(true)

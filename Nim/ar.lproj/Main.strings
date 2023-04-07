@@ -24,6 +24,9 @@
 
 
 
+/* Class = "UIButton"; configuration.title = "copy to clipboard"; ObjectID = "fUO-Oj-sse"; */
+"fUO-Oj-sse.normalTitle" = "نسخ إلى الحافظة";
+
 /* Class = "UIButton"; configuration.title = "explore game"; ObjectID = "nJc-i6-I7O"; */
 "nJc-i6-I7O.normalTitle" = "اكتشف اللعبة";
 

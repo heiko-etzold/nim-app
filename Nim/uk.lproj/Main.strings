@@ -23,6 +23,8 @@
 "bXK-KR-Ive.placeholder" = "Введення ім'я";
 
 
+/* Class = "UIButton"; configuration.title = "copy to clipboard"; ObjectID = "fUO-Oj-sse"; */
+"fUO-Oj-sse.normalTitle" = "Копіювати в буфер обміну";
 
 /* Class = "UIButton"; configuration.title = "explore game"; ObjectID = "nJc-i6-I7O"; */
 "nJc-i6-I7O.normalTitle" = "Дослідити гру";

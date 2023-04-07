@@ -24,6 +24,8 @@
 "bXK-KR-Ive.placeholder" = "Entre nom ici.";
 
 
+/* Class = "UIButton"; configuration.title = "copy to clipboard"; ObjectID = "fUO-Oj-sse"; */
+"fUO-Oj-sse.normalTitle" = "Copier dans le presse-papier";
 
 /* Class = "UIButton"; configuration.title = "explore game"; ObjectID = "nJc-i6-I7O"; */
 "nJc-i6-I7O.normalTitle" = "Rejouer jeu";

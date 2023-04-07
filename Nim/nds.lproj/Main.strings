@@ -25,6 +25,9 @@
 
 
 
+/* Class = "UIButton"; configuration.title = "copy to clipboard"; ObjectID = "fUO-Oj-sse"; */
+"fUO-Oj-sse.normalTitle" = "In een Twüschenaflaag koperen";
+
 /* Class = "UIButton"; configuration.title = "explore game"; ObjectID = "nJc-i6-I7O"; */
 "nJc-i6-I7O.normalTitle" = "Speel ünnersöken";
 
