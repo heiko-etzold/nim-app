@@ -14,7 +14,9 @@ Die App ist in mehreren Sprachen verfügbar:
 * Deutsch (de)
 * Englisch (en)
 * Französisch (fr)
+* Isländisch (is)
 * Kölsch (ksh)
+* Plattdeutsch/Niederdeutsch (nds)
 * Russisch (ru)
 * Ukrainisch (uk)
 
@@ -38,6 +40,8 @@ The app is available in several languages:
 * English (en)
 * French (fr)
 * German (de)
+* Icelandic (is)
+* Low German (nds)
 * Russian (ru)
 * Ukrainian (uk)
 
