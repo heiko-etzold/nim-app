@@ -1,0 +1,13 @@
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+"Numbering of Fields" = "Numeración de los campos";
+"Allow User to Change Numbering of Fields" = "Permitir cambiar la numeración de lo scampos";
+
+"none" = "ninguno";
+"every fifth" = "cada cinco";
+"all" = "todos";
+
+
+"Archive" = "Archivo";
+"Allow Individual Export" = "Permitir exportación individual";
+"Anonymize Names for Export" = "Anonimizar los nombres para la exportación";
