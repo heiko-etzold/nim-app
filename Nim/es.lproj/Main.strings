@@ -1,0 +1,50 @@
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "0hd-WV-14P"; */
+"0hd-WV-14P.normalTitle" = "Iniciar";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "3gF-W3-oPh"; */
+"3gF-W3-oPh.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "put game into archive"; ObjectID = "9be-ek-iOF"; */
+"9be-ek-iOF.normalTitle" = "Archivar juego";
+
+/* Class = "UINavigationItem"; title = "Nim Game"; ObjectID = "BuW-F8-TyD"; */
+"BuW-F8-TyD.title" = "Juego Nim";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Idw-bk-Dr3"; */
+"Idw-bk-Dr3.title" = "Item";
+
+/* Class = "UITextField"; placeholder = "insert name here"; ObjectID = "Lve-u8-C2w"; */
+"Lve-u8-C2w.placeholder" = "Introduce aquí el nombre";
+
+/* Class = "UIButton"; configuration.title = "delete game"; ObjectID = "TJg-74-Zi5"; */
+"TJg-74-Zi5.normalTitle" = "Borrar juego";
+
+/* Class = "UIButton"; normalTitle = "start new game"; ObjectID = "ZUo-zC-Bh5"; */
+"ZUo-zC-Bh5.normalTitle" = "Nueva juego";
+
+/* Class = "UINavigationItem"; title = "Explore Nim Game"; ObjectID = "axv-iq-DZL"; */
+"axv-iq-DZL.title" = "Examinar el juego Nim";
+
+/* Class = "UITextField"; placeholder = "insert name here"; ObjectID = "bXK-KR-Ive"; */
+"bXK-KR-Ive.placeholder" = "Introduce aquí el nombre";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "e5X-0v-4E4"; */
+"e5X-0v-4E4.title" = "Ajustes ";
+
+/* Class = "UIButton"; configuration.title = "copy to clipboard"; ObjectID = "fUO-Oj-sse"; */
+"fUO-Oj-sse.normalTitle" = "Copiar el juego en el portapapeles";
+
+
+/* Class = "UIButton"; configuration.title = "replay game"; ObjectID = "nJc-i6-I7O"; */
+"nJc-i6-I7O.normalTitle" = "Examinar el juego";
+
+
+/* Class = "UIButton"; normalTitle = "start new game"; ObjectID = "u3K-WS-qT8"; */
+"u3K-WS-qT8.normalTitle" = "Nueva juego";
+
+/* Class = "UINavigationItem"; title = "Archive"; ObjectID = "vkt-RJ-T0d"; */
+"vkt-RJ-T0d.title" = "Archivo";
+
+/* Class = "UIButton"; normalTitle = "put game into archive"; ObjectID = "xQ6-EH-aOV"; */
+"xQ6-EH-aOV.normalTitle" = "Archivar juego";

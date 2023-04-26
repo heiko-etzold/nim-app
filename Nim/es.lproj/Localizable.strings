@@ -1,0 +1,57 @@
+/*
+  Localizable.strings
+  Nim
+
+  Created by Heiko Etzold
+  MIT License
+
+*/
+
+
+// ViewController
+fields = "Campos";
+oneTile = "1 ficha";
+twoTiles = "1 ó 2 fichas";
+threeTiles = "1, 2 ó 3 fichas";
+fourTiles = "1, 2, 3 ó 4 fichas";
+lastWins = "El último campo gana.";
+lastLoses = "El último campo pierde.";
+
+
+// GameViewController
+left = "Izquierda";
+right = "Derecha";
+beginner = "¿Quién comienza?";
+placeTilesInOrder = "Debes colocar las fichas en orden de izquierda a derecha.";
+placeAtLeastOne = "Debes colocar al menos una ficha.";
+turnName = "Es el turno de %@.";
+ready = "Listo";
+selectPlayer = "Primero debes elegir quién empieza.";
+winner = "%@ ha ganado.";
+
+
+//ArchiveViewController
+deleteAlert = "¿Borrar todos los juegos?";
+deleteAlertText = "¿Realmente quieres borrar todos los juegos?";
+deleteAlertSingle = "Borrar juego";
+deleteAlertTextSingle = "¿Realmente quieres borrar el juego %d?";
+deleteAlertTextSingleBefore = "Do you really want to delete game ";
+deleteAlertTextSingleBehind = "?";
+delete = "Borrar";
+cancel = "Cancelar";
+
+NimArchive = "Nim Archivo";
+
+
+//Global
+archiveNewAlert = "Abrir nuevo archive";
+archiveNewText = "¿Qué quieres hacer?";
+archiveRemove = "Sobrescribir archivo antiguo";
+archiveAdd = "Ampliar archivo antiguo";
+
+error = "Error";
+errorNotRead = "No se puede leer el archivo.";
+errorUnknown = "Se ha producido un error desconocido.";
+errorFileType = "El tipo de archivo no es compatible con la aplicación.";
+
+

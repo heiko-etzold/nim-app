@@ -29,6 +29,10 @@
 /* Begin PBXFileReference section */
 		B32E591427D6613700967B8F /* ColorSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSettingsViewController.swift; sourceTree = "<group>"; };
 		B330194E27D3C6780030E9D7 /* GameResearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResearchViewController.swift; sourceTree = "<group>"; };
+		B33C4E8129F8528B0037D139 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		B33C4E8229F8528B0037D139 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = es; path = es.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		B33C4E8329F8528B0037D139 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B33C4E8429F8528B0037D139 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B34917C727E37ECE00486216 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		B34917C827E37ECE00486216 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B34917C927E37ECE00486216 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 				ksh,
 				is,
 				nds,
+				es,
 			);
 			mainGroup = B39288622718A8130058DEC4;
 			productRefGroup = B392886C2718A8130058DEC4 /* Products */;
@@ -239,6 +244,7 @@
 				B37BD49E2819D368004D3ECF /* ksh */,
 				B3D1E79228915BB100DCBB0F /* is */,
 				B363422D2892A83500C4BB6B /* nds */,
+				B33C4E8129F8528B0037D139 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -263,6 +269,7 @@
 				B37BD49F2819D368004D3ECF /* ksh */,
 				B3D1E79328915BB200DCBB0F /* is */,
 				B363422E2892A83500C4BB6B /* nds */,
+				B33C4E8229F8528B0037D139 /* es */,
 			);
 			name = Localizable.stringsdict;
 			sourceTree = "<group>";
@@ -279,6 +286,7 @@
 				B37BD4A02819D369004D3ECF /* ksh */,
 				B3D1E79428915BCA00DCBB0F /* is */,
 				B363422F2892A83500C4BB6B /* nds */,
+				B33C4E8329F8528B0037D139 /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -295,6 +303,7 @@
 				B37BD4A12819D369004D3ECF /* ksh */,
 				B3D1E79528915BD000DCBB0F /* is */,
 				B36342302892A83600C4BB6B /* nds */,
+				B33C4E8429F8528B0037D139 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -427,7 +436,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Nim/Nim.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_TEAM = FJWHQYBD25;
 				INFOPLIST_FILE = Nim/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
@@ -436,7 +445,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.heiko-etzold.nim";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -454,7 +463,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Nim/Nim.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_TEAM = FJWHQYBD25;
 				INFOPLIST_FILE = Nim/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
@@ -463,7 +472,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.heiko-etzold.nim";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
